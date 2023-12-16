@@ -1,0 +1,30 @@
+PS C:\Users\chies> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\chies
+
+
+Mode                 LastWriteTime         Length Name       
+----                 -------------         ------ ----       
+d-----        2023/12/16     21:07                git_challen
+                                                  ge
+
+
+PS C:\Users\chies> cd git_challenge
+PS C:\Users\chies\git_challenge> git init
+Initialized empty Git repository in C:/Users/chies/git_challenge/.git/
+PS C:\Users\chies\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\chies\git_challenge> git add hello_world.txt
+PS C:\Users\chies\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 97c8fb9] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\chies\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\chies\git_challenge> git add hello_world.txt
+PS C:\Users\chies\git_challenge> git commit -m "日本語訳を追記"
+[main a147b90] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\chies\git_challenge> git log --oneline
+a147b90 (HEAD -> main) 日本語訳を追記
+97c8fb9 hello_world.txtを追加
+PS C:\Users\chies\git_challenge> 
